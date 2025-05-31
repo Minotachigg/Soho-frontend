@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,12 +13,15 @@
     <link rel="stylesheet" href="button.css">
 
 </head>
+
 <body>
     <header>
 
         <div class="nav_bar">
-            <div class="bg_image" style="background-image: url(https://images.unsplash.com/photo-1504802318913-d3f9a487448c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1943&q=80);"></div>
-            <div  class="nav_wrapper">
+            <div class="bg_image"
+                style="background-image: url(https://images.unsplash.com/photo-1504802318913-d3f9a487448c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1943&q=80);">
+            </div>
+            <div class="nav_wrapper">
                 <nav class="nav_left">
                     <ul>
                         <li><a href="about.html">About</a></li>
@@ -33,7 +37,7 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
-        </div>
+            </div>
 
             <div class="text_overlay">
                 <p>CONTACT </p>
@@ -46,36 +50,66 @@
 
     <main>
 
-        <div class="intro_section">
+        <div class="intro_section contact-container">
             <h1>ARRANGE A PRIVATE CONSULTATION</h1>
             <p>For a confidential discussion about your next development, please contact inquiry@soho.com</p>
+
+            <form action="" method="POST">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <div class="submit-button">
+                    <input type="submit" value="CONTACT US">
+                </div>
+            </form>
         </div>
 
         <div class="contact_us">
-            
-            <div id="map" class="map_info">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81742.58001662225!2d-122.03442795188707!3d37.336090812507756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb596e9e188fd%3A0x3b0d8391510688f0!2sApple%20Park!5e0!3m2!1sen!2snp!4v1679316647674!5m2!1sen!2snp" width="1520" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                <div class="contact_info">
-                    <p>HEADQUARTERS</p>
-                    <span>2733 MCKENZIE AVENUE SURREY, BC V4A 3H2, CANADA +1 604 282 3996</span>
-                    <span>INQUIRY@SOHO.COM</span>
+            <div class="map">
+                <div class="map-info">
+                    <h1>HEADQUARTERS</h1> <br><br><br>
+                    <p>2733 MCKENZIE AVENUE SURREY, <br> BC V4A 3H2, CANADA +1 604 282 3996</p> <br>
+                    <p>INQUIRY@SOHO.COM</p>
                 </div>
-
+                <div class="map-box">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81742.58001662225!2d-122.03442795188707!3d37.336090812507756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb596e9e188fd%3A0x3b0d8391510688f0!2sApple%20Park!5e0!3m2!1sen!2snp!4v1679316647674!5m2!1sen!2snp"
+                        width="1520" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
             </div>
         </div>
 
     </main>
 
     <footer>
-        <div  class="footer_body">
+        <div class="footer_body">
             <div class="footer_top">
                 <ul>
                     <li><a href="">About</a></li>
                     <li><a href="">Approp</a></li>
                     <li><a href="">Portfolio</a></li>
                 </ul>
-                    <div class="footer_text">World's Finest Real estate</div>
+                <div class="footer_text">World's Finest Real estate</div>
                 <ul>
                     <li><a href="">About</a></li>
                     <li><a href="">Approp</a></li>
@@ -85,7 +119,7 @@
 
             <div class="footer_end">
                 <div class="footer_logo">
-                   <a href="./index.html">soho</a> 
+                    <a href="./index.html">soho</a>
                 </div>
                 <div class="copyright">
                     <p>2733 MCKENZIE AVENUE SURREY, BC V4A 3H2, CANADA</p>
@@ -96,11 +130,12 @@
     </footer>
 
 
-<!-- *********************************************************************** -->
-<script src="nav.js"></script>
-<script src="https://kit.fontawesome.com/d3eac94aa9.js" crossorigin="anonymous"></script>
+    <!-- *********************************************************************** -->
+    <script src="nav.js"></script>
+    <script src="https://kit.fontawesome.com/d3eac94aa9.js" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
 
 
