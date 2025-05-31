@@ -369,15 +369,6 @@ body a {
   margin-bottom: 8px;
 }
 
-/* Responsive tweak for smaller screens */
-@media (max-width: 600px) {
-  .map-info {
-    left: 20px;
-    right: 20px;
-    max-width: unset;
-  }
-}
-
 .contact-container form {
   width: 1000px;
   text-align: start;
