@@ -1,0 +1,50 @@
+
+/* *************************************************************** */
+/* .intro_section {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.5s ease-in-out;
+    visibility: hidden;
+}
+  
+.intro_section.active {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+ */
+
+
+/* ********************* buttons  ******************************************* */
+
+/* .estate_list p,
+.estate_list .myButton {
+    opacity: 1;
+    transition: opacity 2s ease; 
+}
+  
+.estate_list:hover p,
+.estate_list:hover .myButton {
+    animation: fade-in 2s forwards; 
+}
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+.estate_list button {
+    padding: 5px 25px;
+    border: 2px solid transparent;
+    border-radius: 5px; 
+    transition: border-color 1s ease;
+}
+.estate_list:hover button {
+    border-color: #fff; 
+} */

@@ -1,0 +1,66 @@
+
+.button {
+    padding: 10px 35px;
+    border: none;
+    background: transparent;
+    transform: translateX(20%);
+    transition: all 1s ease;
+}
+
+.side::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    top: 45%;
+    left: -3rem;
+    width: 2rem;
+    height: 1px;
+    transition: all 1s ease;
+}
+.button:hover .side::before,
+.estate_list:hover .side::before {
+    transform: translateX(-3rem);
+    width: 0;
+    opacity: 0;
+}
+
+.line:nth-child(n)::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 0;
+    height: 0;
+    transition: all 1s ease;
+}
+.line:nth-child(1)::before {
+    height: 2px;
+    top: 0;
+    left: 0;
+}
+.line:nth-child(2)::before {
+    width: 2px;
+    right: 0;
+    bottom: 0;
+}
+.line:nth-child(3)::before {
+    height: 2px;
+    right: 0;
+    bottom: 0;
+}
+.line:nth-child(4)::before {
+    width: 2px;
+    top: 0;
+    left: 0;
+}
+.button:hover,
+.estate_list:hover .button {
+    transform: translateX(-20%);
+}
+.button:hover .line:nth-child(even)::before, 
+.estate_list:hover .line:nth-child(even)::before {
+    height: 100%;
+}
+.button:hover .line:nth-child(odd)::before,
+.estate_list:hover .line:nth-child(odd)::before {
+    width: 100%;
+}
